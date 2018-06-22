@@ -1,0 +1,57 @@
+{
+    "name": "vyygir/buckle",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vyygir",
+            "email": "open.source@vyygir.me"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "5.6.10",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+                },
+                "require": {
+                    "philippbaschke/acf-pro-installer": "^1.0",
+                    "composer/installers": "^1.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^4.9",
+        "oscarotero/env": "^1.1",
+        "composer/installers": "^1.5",
+        "vlucas/phpdotenv": "^2.4",
+        "philippbaschke/acf-pro-installer": "^1.0",
+        "wpackagist-plugin/wordpress-seo": "dev-trunk",
+        "wpackagist-plugin/duplicate-post": "dev-trunk",
+        "wpackagist-plugin/w3-total-cache": "dev-trunk",
+        "wpackagist-plugin/wordfence": "dev-trunk",
+        "wpackagist-plugin/regenerate-thumbnails": "dev-trunk",
+        "jjgrainger/wp-custom-post-type-class": "dev-master",
+        "samrap/acf-fluent": "^0.4.0",
+        "advanced-custom-fields/advanced-custom-fields-pro": "*",
+        "rareloop/router": "^3.0",
+        "league/container": "^2.4"
+    },
+    "extra": {
+        "installer-paths": {
+            "app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "cms"
+    }
+}
