@@ -36,15 +36,13 @@
         "vlucas/phpdotenv": "^2.4",
         "philippbaschke/acf-pro-installer": "^1.0",
         "wpackagist-plugin/wordpress-seo": "dev-trunk",
+        "advanced-custom-fields/advanced-custom-fields-pro": "*",
         "wpackagist-plugin/duplicate-post": "dev-trunk",
         "wpackagist-plugin/w3-total-cache": "dev-trunk",
         "wpackagist-plugin/wordfence": "dev-trunk",
         "wpackagist-plugin/regenerate-thumbnails": "dev-trunk",
-        "jjgrainger/wp-custom-post-type-class": "dev-master",
-        "samrap/acf-fluent": "^0.4.0",
-        "advanced-custom-fields/advanced-custom-fields-pro": "*",
-        "rareloop/router": "^3.0",
-        "league/container": "^2.4"
+        "jjgrainger/posttypes": "^2.0",
+        "anthonybudd/wp_ajax": "^1.0"
     },
     "extra": {
         "installer-paths": {
